@@ -10,4 +10,4 @@ value = {
     "priority":1,
     "duration":55
 }
-r.hset("32.0989599,34.9515022", mapping=value)
+r.hset("32.164158,34.855313", mapping=value)

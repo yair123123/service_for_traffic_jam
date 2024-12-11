@@ -6,6 +6,10 @@ traffic_blueprint = blueprints.Blueprint("traffic",__name__)
 
 @traffic_blueprint.route("/get_traffic_jam",methods=["POST"])
 def get_traffic_jam():
-    routes = {f'route_{i}': sublist for i, sublist in enumerate(request.json)}
-    short_route = find_short_route_by_traffic_jam(routes)
-    return jsonify(routes[short_route])
+    try:
+        routes = request.json
+        short_route = find_short_route_by_traffic_jam(routes)
+        return jsonify(short_route)
+    except Exception as e:
+        print(e)
+        return jsonify({"message":"Invalid input"})

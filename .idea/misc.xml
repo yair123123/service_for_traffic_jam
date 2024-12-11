@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (check_traffic_jam)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (check_traffic_jam)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (service_for_traffic_jam)" project-jdk-type="Python SDK" />
 </project>

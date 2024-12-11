@@ -7,4 +7,4 @@ app = Flask(__name__)
 app.register_blueprint(traffic_blueprint,url_prefix="/api/traffic")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5005)
